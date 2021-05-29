@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       
+       html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background:red
+}
+#demo {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+#code {
+  border: 1px solid #000;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 0.5em;
+  margin: 1em;
+}
+svg {
+  display: none;
+}
+        </style>
+</head>
+<body>
+    <div id="audio-panel">
+        <audio controls id="music">
+            <source src="TF004.WAV" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <button onclick="play()" type="button">Play </button>
+            <button onclick="pause()" type="button">Pause</button>
+    </div>
+
+    <label>Token: </label>
+    <input style="width: 50%;" type="text" id="token" />
+
+    <button style="width: 100px; height: 30px;" onclick="myFunction()">Show Captcha</button> 
+    <button style="color: green;" onclick="apiRunInOneMin()">Run benificary every min</button>
+
+    <br>
+    <p id="display-json"></p>
+    <br>
+    <br>
+    <br>
+
+    <div id="container">
+
+
+    </div>
+    
+  
+
+
+
+<!-- This is used for output -->
+<div id="demo"><pre id="code">
+[base64]
+</pre></div>
+
+<script src="myScript.js"></script>
+</body>
+</html>
