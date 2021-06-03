@@ -36,7 +36,7 @@ function apiRunInOneMin() {
           sessions.forEach((session) => {
             let obj = {};
             if (
-              session.min_age_limit === 45 &&
+              session.min_age_limit === 18 &&
               session.available_capacity > 0 &&
               session.vaccine === "COVISHIELD"
             ) {
