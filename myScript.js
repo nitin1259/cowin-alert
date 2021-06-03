@@ -1,9 +1,3 @@
-// console.log(document.getElementById("token").value);
-
-// if (document.getElementById("token")) {
-//   var token = document.getElementById("token");
-// }
-
 var myMusic = document.getElementById("music");
 function play() {
   myMusic.play();
